@@ -659,7 +659,77 @@
             </div>
         </div>
     </section>
-
-    <!-- Same footer as homepage -->
+ <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-logo">Etom </div>
+                    <p>Leading engineering and construction services provider in Uganda since 2015.</p>
+                    <div style="margin-top: 20px;">
+                        <a href="https://wa.me/256782260505" class="cta-button" style="display: inline-block;">Reach us on WhatsApp</a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="Consultancy.html">Consultancy</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Civil Engineering</a></li>
+                        <li><a href="#">Construction</a></li>
+                        <li><a href="#">Electrical Engineering</a></li>
+                        <li><a href="#">Mechanical Engineering</a></li>
+                        <li><a href="#">Project Management</a></li>
+                        <li><a href="#">Consultancy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Plot 42, Okot Close, Gulu</li>
+                        <li><i class="fas fa-phone-alt"></i> +256 782 260 505</li>
+                        <li><i class="fas fa-envelope"></i> info@etomengineering.com</li>
+                    </ul>
+                    <div style="margin-top: 20px;">
+                        <a href="#" style="color: white; margin-right: 15px;"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" style="color: white; margin-right: 15px;"><i class="fab fa-twitter"></i></a>
+                        <a href="#" style="color: white; margin-right: 15px;"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" style="color: white;"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Etom Engineering Services Limited Technical Services Limited. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // Mobile Menu Toggle
+        document.querySelector('.mobile-menu').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+    
 </body>
 </html>
